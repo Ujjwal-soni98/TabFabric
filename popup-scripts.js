@@ -1,6 +1,6 @@
 function showToast(message) {
   const toast = document.getElementById('toast');
-  toast.textContent = message || '✅changes Applied successfully';
+  toast.textContent = message || 'changes Applied successfully ✅';
   toast.classList.add('show');
 
   setTimeout(() => {
@@ -12,7 +12,27 @@ function showToast(message) {
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.querySelector("button");
   const select = document.querySelector("select");
-  const enteredtitle = document.getElementById("enteredInput")
+  const enteredTitle = document.getElementById("enteredInput");
+
+  // Fetch current tab's title if available and set it as placeholder
+
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    if (!tabs.length) return;
+    const tab = tabs[0];
+
+    // If the tab is already in a group, get the group title
+    if (tab.groupId !== chrome.tabGroups.TAB_GROUP_ID_NONE) {
+      chrome.tabGroups.get(tab.groupId, (group) => {
+        if (enteredTitle) {
+          enteredTitle.value = group.title || "";
+        }
+      });
+    } else {
+      // If tab not in any group
+      enteredTitle.placeholder = "Enter the mnemonic for your tab";
+    }
+  });
+
 
   button?.addEventListener("click", () => {
     const selectedColor = select.value;
@@ -29,11 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     chrome.tabGroups.update(groupId, {
           color: selectedColor,
-          title: enteredtitle.value,
+          title: enteredTitle.value,
         });
       });
     });
 
+    const prefillTitle = chrome.tabGroups.title;
+    console.log(prefillTitle, "line 38");
     showToast("Changes Applied successfully ✅");
   });
 });
