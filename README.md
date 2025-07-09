@@ -33,6 +33,9 @@ Since using TabFabric, my workflow has become noticeably more focused and produc
 
 ![tabfabricPreview](https://github.com/user-attachments/assets/e6f63895-acab-435c-a7db-6d8db3339a2b)
 
+![tabfabricPreview (1)](https://github.com/user-attachments/assets/387d7c98-2bbb-404d-9607-e0a0757e123e)
+
+
 
 ---
 
