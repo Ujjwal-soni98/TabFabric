@@ -9,11 +9,7 @@
       "128": "icons/icon-128.png"
     }
   },
-  "permissions": [
-    "tabs",
-    "tabGroups",
-    "activeTab"
-  ],
+  "permissions": ["tabs", "tabGroups", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "icons": {
     "128": "icons/icon-128.png"
