@@ -40,11 +40,11 @@ Since using TabFabric, my workflow has become noticeably more focused and produc
 ---
 
 ## 🚀 How to Run TabFabric (Load Unpacked Extension)
-- Clone this repository
-- Open chrome://extensions/ in your Chrome browser
-- Enable Developer mode (top right corner)
-- Click Load unpacked
-- Select the folder containing this extension
+- **Clone this repository**
+- **Open chrome://extensions/ in your Chrome browser**
+- **Enable Developer mode (top right corner)**
+- **Click Load unpacked**
+- **Select the folder containing this extension**
 
 ### ✅ Prerequisites
 
