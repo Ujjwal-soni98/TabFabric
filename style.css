@@ -1,21 +1,19 @@
 * {
-    width: 100%;
-    margin: 0;
-    /* background-color: rgb(28, 28, 28); */
-    
-
+  width: 100%;
+  margin: 0;
+  /* background-color: rgb(28, 28, 28); */
 }
 
-body{
-    margin:2rem 0;
-    width: 250px;  /* You can adjust this */
-    height: 250px; 
-    display: flex;
+body {
+  margin: 2rem 0;
+  width: 250px; /* You can adjust this */
+  height: 250px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-body{
+body {
   background: linear-gradient(
     145deg,
     #34ff7bf3,
@@ -28,107 +26,100 @@ body{
   );
 }
 
-
-#parent{
-    border: black;
-    align-content: center;
-    margin-top: 0rem;
+#parent {
+  border: black;
+  align-content: center;
+  margin-top: 0rem;
 }
-.heading{
-    width:80%;
-    margin: 0 auto 1rem auto;
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-}
-
-.tabFabric{
-    color: rgb(24, 32, 37);
-    display: block;
+.heading {
+  width: 80%;
+  margin: 0 auto 1rem auto;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
 }
 
-.actions{
-    width: 90%;
-    margin: 0 auto;
+.tabFabric {
+  color: rgb(24, 32, 37);
+  display: block;
 }
 
-.container{
-    width: 90%;
-    margin-top: 1rem;
+.actions {
+  width: 90%;
+  margin: 0 auto;
+}
 
-    align-content: center;
-background: rgba(255, 218, 255, 0.345);
+.container {
+  width: 90%;
+  margin-top: 1rem;
+
+  align-content: center;
+  background: rgba(255, 218, 255, 0.345);
   backdrop-filter: blur(6px);
   /* border-radius: 12px; */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   padding: 1rem;
-
 }
 
-
-.dropdown-container{
-    width: 100%;
-    align-content: center;
+.dropdown-container {
+  width: 100%;
+  align-content: center;
 }
 
-.mylabel{
-    color: #2b2b2a;
+.mylabel {
+  color: #2b2b2a;
 }
-.colorSelect{
-    width: 100%;
-    outline-color: #716c76;
-    outline-width: 1px ;
-    border-style: none;
+.colorSelect {
+  width: 100%;
+  outline-color: #716c76;
+  outline-width: 1px;
+  border-style: none;
 }
-.colorSelect:focus{
-    outline: none;
+.colorSelect:focus {
+  outline: none;
 }
 
-.button{
-    width: 100%;
-    background-color: rgb(41, 42, 42);
-    color: rgba(255, 255, 255, 0.948);
-    border-radius: 0.2rem;
-    border: rgb(232, 244, 221);
-    border-width: 4px;
-    margin-top: 1rem;
-    cursor: pointer;
+.button {
+  width: 100%;
+  background-color: rgb(41, 42, 42);
+  color: rgba(255, 255, 255, 0.948);
+  border-radius: 0.2rem;
+  border: rgb(232, 244, 221);
+  border-width: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
 .button:hover {
-       
-        background-color: rgba(99, 240, 111, 0.801);
-        color: #0e0d0df8;
-        font-weight: 400;
-    }
-
-.inputbox{
-    width: 95%;
-    margin-top: 0.5rem;
-    outline-color: #716c76;
-    outline-width: 1px ;
-    margin-right: 1.5rem;
-    
+  background-color: rgba(99, 240, 111, 0.801);
+  color: #0e0d0df8;
+  font-weight: 400;
 }
 
-.inputbox::placeholder{
-    font-size: 12px;
+.inputbox {
+  width: 95%;
+  margin-top: 0.5rem;
+  outline-color: #716c76;
+  outline-width: 1px;
+  margin-right: 1.5rem;
 }
 
-
+.inputbox::placeholder {
+  font-size: 12px;
+}
 
 .toast {
-    width: 80%;
-    margin-left: 1rem;
-    margin-top: -3.5rem;
+  width: 80%;
+  margin-left: 1rem;
+  margin-top: -3rem;
   visibility: hidden;
-  background-color: #000000b3; /* green */
+  background-color: #662a7cd3; /* green */
   color: #eaebe0eb;
   text-align: center;
   border-radius: 4px;
   padding: 8px 12px;
   position: absolute;
-  top: 0rem; /* appear above heading */
+  /* top: 0.5rem; appear above heading */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;

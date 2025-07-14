@@ -3,39 +3,44 @@
   <head>
     <meta charset="utf-8" data-next-head="" />
     <meta name="viewport" content="width=device-width" data-next-head="" />
-    <link rel ="stylesheet" type ="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <noscript data-n-css=""></noscript>
   </head>
   <body class="">
-    <div id="parent" style="position: relative;">
+    <div id="parent" style="position: relative">
       <div id="toast" class="toast"></div>
 
       <div class="heading">
-        <img src="./icons/WhatsApp_Image_2025-07-05_at_18.31.01_955854c6-removebg-preview.png" alt="" style="width: 30px; height: 30px;">
+        <img
+          src="./icons/roller.png"
+          alt="Paint-roller-icon"
+          style="width: 30px; height: 30px"
+        />
         <h1 class="tabFabric">TabFabric</h1>
       </div>
       <div class="container">
         <div class="actions">
-        <label class="mylabel"><h4>Choose Tab Color</h4></label>
-        <div class="dropdown-container">
-        <select class="colorSelect" >
-          <option value="grey">Grey</option>
-          <option value="red">Red</option>
-          <option value="blue" selected="">Blue</option>
-          <option value="green">Green</option>
-          <option value="purple">Purple</option>
-          <option value="cyan">Cyan</option>
-          <option value="yellow">Yellow</option>
-          <option value="pink">Pink</option>
-          <option value="orange">Orange</option>
-          </select>
-          <input type="text" class="inputbox" placeholder="Enter the mnemonic for your tab" id="enteredInput">
-          <button
-          class="button"
-        >
-          Apply Selected Color & Mnemonic
-        </button>
-        </div>
+          <label class="mylabel"><h4>Choose Tab Color</h4></label>
+          <div class="dropdown-container">
+            <select class="colorSelect">
+              <option value="grey">Grey</option>
+              <option value="red">Red</option>
+              <option value="blue" selected="">Blue</option>
+              <option value="green">Green</option>
+              <option value="purple">Purple</option>
+              <option value="cyan">Cyan</option>
+              <option value="yellow">Yellow</option>
+              <option value="pink">Pink</option>
+              <option value="orange">Orange</option>
+            </select>
+            <input
+              type="text"
+              class="inputbox"
+              placeholder="Enter the mnemonic for your tab"
+              id="enteredInput"
+            />
+            <button class="button" tabindex="0" aria-label="Apply selected tab color and mnemonic">Apply Selected Color & Mnemonic</button>
+          </div>
         </div>
       </div>
     </div>
